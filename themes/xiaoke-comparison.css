@@ -1,0 +1,229 @@
+:root {
+    --xk-bg: #fafafa;
+    --xk-surface: #ffffff;
+    --xk-surface-soft: #f3f4f6;
+    --xk-border: #e5e7eb;
+    --xk-border-strong: #d1d5db;
+    --xk-text: #1f2937;
+    --xk-text-soft: #4b5563;
+    --xk-title: #111827;
+    --xk-accent: #2563eb;
+    --xk-accent-soft: #dbeafe;
+    --xk-code-bg: #f3f4f6;
+    --xk-code-text: #1f2937;
+    --xk-quote-bg: #f9fafb;
+    --xk-quote-line: #2563eb;
+    --xk-shadow: 0 2px 8px rgba(17, 24, 39, 0.05);
+}
+
+#wenyan {
+    color: var(--xk-text);
+    background: var(--xk-bg);
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.005em;
+    padding: 24px 20px 36px;
+}
+
+#wenyan * {
+    box-sizing: border-box;
+}
+
+#wenyan p,
+#wenyan ul,
+#wenyan ol,
+#wenyan blockquote,
+#wenyan pre,
+#wenyan table,
+#wenyan figure {
+    margin: 1em 0;
+}
+
+#wenyan p,
+#wenyan ul,
+#wenyan ol,
+#wenyan blockquote,
+#wenyan table,
+#wenyan figure {
+    font-size: 16px;
+}
+
+#wenyan h1,
+#wenyan h2,
+#wenyan h3,
+#wenyan h4 {
+    color: var(--xk-title);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+#wenyan h1 {
+    margin: 0.3em 0 1em;
+    padding: 0 0 0.6em;
+    font-size: 1.85em;
+    line-height: 1.35;
+    border-bottom: 2px solid var(--xk-border-strong);
+}
+
+#wenyan h2 {
+    margin: 1.8em 0 0.8em;
+    padding: 0 0 0.5em;
+    font-size: 1.3em;
+    line-height: 1.4;
+    border-bottom: 2px solid var(--xk-accent);
+}
+
+#wenyan h3 {
+    margin: 1.4em 0 0.6em;
+    font-size: 1.1em;
+    padding-left: 0.5em;
+    border-left: 3px solid var(--xk-accent);
+}
+
+#wenyan h4 {
+    margin: 1.1em 0 0.5em;
+    font-size: 1em;
+    color: var(--xk-accent);
+}
+
+#wenyan a {
+    color: var(--xk-accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+#wenyan strong {
+    color: var(--xk-title);
+    font-weight: 700;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, var(--xk-accent-soft) 60%);
+}
+
+#wenyan em {
+    color: var(--xk-text-soft);
+}
+
+#wenyan ul,
+#wenyan ol {
+    padding-left: 1.4em;
+}
+
+#wenyan li {
+    margin: 0.4em 0;
+    padding-left: 0.1em;
+}
+
+#wenyan li::marker {
+    color: var(--xk-accent);
+}
+
+#wenyan blockquote {
+    padding: 0.85em 1em;
+    color: var(--xk-text);
+    background: var(--xk-quote-bg);
+    border-left: 3px solid var(--xk-quote-line);
+    border-radius: 0 8px 8px 0;
+}
+
+#wenyan blockquote p:first-child {
+    margin-top: 0;
+}
+
+#wenyan blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+#wenyan img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 1.2em auto;
+    border: 1px solid var(--xk-border);
+    border-radius: 8px;
+    box-shadow: var(--xk-shadow);
+    background: var(--xk-surface);
+}
+
+#wenyan hr {
+    border: 0;
+    border-top: 1px solid var(--xk-border);
+    margin: 2em 0;
+}
+
+#wenyan code {
+    padding: 0.12em 0.35em;
+    color: var(--xk-code-text);
+    background: var(--xk-code-bg);
+    border: 1px solid var(--xk-border);
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+#wenyan pre {
+    padding: 0;
+    overflow: hidden;
+    background: var(--xk-code-bg);
+    border: 1px solid var(--xk-border);
+    border-radius: 8px;
+    box-shadow: var(--xk-shadow);
+}
+
+#wenyan pre code {
+    display: block;
+    padding: 1em;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    line-height: 1.65;
+    white-space: pre;
+}
+
+#wenyan table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background: var(--xk-surface);
+    border: 1px solid var(--xk-border-strong);
+    border-radius: 8px;
+    box-shadow: var(--xk-shadow);
+    font-size: 14px;
+}
+
+#wenyan th,
+#wenyan td {
+    padding: 0.75em 0.85em;
+    border-bottom: 1px solid var(--xk-border);
+    text-align: left;
+    vertical-align: top;
+}
+
+#wenyan th {
+    color: var(--xk-title);
+    background: var(--xk-accent-soft);
+    font-weight: 700;
+    border-bottom: 1px solid var(--xk-border-strong);
+}
+
+#wenyan tr:last-child td {
+    border-bottom: 0;
+}
+
+#wenyan tr:nth-child(even) td {
+    background: var(--xk-surface-soft);
+}
+
+#wenyan figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#wenyan figcaption {
+    margin-top: 0.5em;
+    color: var(--xk-text-soft);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#wenyan #footnotes p {
+    font-size: 13px;
+    color: var(--xk-text-soft);
+}

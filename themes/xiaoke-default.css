@@ -39,6 +39,15 @@
     margin: 1.1em 0;
 }
 
+#wenyan p,
+#wenyan ul,
+#wenyan ol,
+#wenyan blockquote,
+#wenyan table,
+#wenyan figure {
+    font-size: 15px;
+}
+
 #wenyan h1,
 #wenyan h2,
 #wenyan h3,
@@ -207,4 +216,8 @@
     color: var(--xk-text-soft);
     font-size: 0.92em;
     text-align: center;
+}
+
+#wenyan #footnotes p {
+    font-size: 14px;
 }
