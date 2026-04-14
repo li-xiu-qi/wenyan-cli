@@ -227,6 +227,7 @@ async function setupProxy(proxyUrl?: string) {
 export const program = createProgram();
 
 // 仅在作为主模块运行时执行 parse，防止测试文件 import 时意外触发
-if (import.meta.main) {
+const isMainModule = import.meta.url === `file://${process.argv[1]}` || (typeof import.meta.main !== "undefined" && import.meta.main);
+if (isMainModule) {
     program.parse(process.argv);
 }
